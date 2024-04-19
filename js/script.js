@@ -14,7 +14,7 @@
 
 for(let i=1;i<=100;i= i+ 1){
     let lista = document.getElementById("contenitore-numeri");
-    const element =`<li class="box box--$(i)"></li>` ;
+    const element =`<div class="box box--$(i)"></div>` ;
     lista.innerHTML+=element+i;
 
 
