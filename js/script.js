@@ -14,26 +14,34 @@
 
 for(let i=1;i<=100;i= i+ 1){
     let lista = document.getElementById("contenitore-numeri");
-    const element =`<div class="box box--$(i)"></div>` ;
-    lista.innerHTML+=element+i;
-
-
-
+    const element =`<div></div>`;
+    
+    
+    
+    
     if(i % 3==0 && i % 5==0){
-        console.log("fizzbuzz");        
+        console.log("fizzbuzz");
+        lista.innerHTML+=element+"fizzbuzz";
+        
     }
     
     
     else if(i % 3 == 0) {
         console.log("fizz" );
+        lista.innerHTML+=element+"fizz";
+
+        
     }
     
     else if(i % 5 ==0){
         console.log("buzz");
+        lista.innerHTML+=element+"buzz";
+
     }
     
     else{
         console.log(i)
+        lista.innerHTML+=element+i;
     }
     
     
