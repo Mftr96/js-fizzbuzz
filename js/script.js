@@ -11,21 +11,20 @@
 
 for(let i=1;i<=100;i= i+ 1){
     
-     
+    if(i % 3==0 && i % 5==0){
+       console.log("fizzbuzz");        
+   }
+  
 
-    if(i % 3 == 0) {
-        let i="fizz";
-        console.log(i);
+    else if(i % 3 == 0) {
+        console.log("fizz" );
     }
 
     else if(i % 5 ==0){
-        let i="buzz"
-        console.log(i);
+        console.log("buzz");
     }
+
     else{
         console.log(i)
-
-            
     }
-
 }
